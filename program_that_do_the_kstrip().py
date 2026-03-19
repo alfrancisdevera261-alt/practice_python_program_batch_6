@@ -1,3 +1,9 @@
 name = input("Enter your name: ")
-name_formatted = name.strip()
-print(name_formatted)
+spaces = ""
+for character in name:
+    if character == " ":
+        spaces += " "
+    else:
+        break
+result = name.removeprefix(spaces)
+print(result)
